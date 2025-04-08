@@ -1,0 +1,14 @@
+<div class="song-list">
+    <h3 class="song-list-title">My Playlist</h3>
+  
+    <ul class="songs">
+      <li *ngFor="let song of songs" class="song-item">
+        <div class="song-details">
+          <h4>{{ song.title }}</h4>
+          <p>{{ song.artist }} - {{ song.album }}</p>
+        </div>
+        <button class="play-button">Play</button>
+      </li>
+    </ul>
+  </div>
+  
