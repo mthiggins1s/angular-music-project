@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from "./header/header.component";
+import { HeaderComponent } from "../../headers/header/header.component";
+import { SongListComponent } from "./song-list/song-list.component";
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent],
+  imports: [HeaderComponent, SongListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
