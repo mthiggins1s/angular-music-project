@@ -1,14 +1,15 @@
-  .app-header {
-    font-family: var(--font-family);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: var(--header-bg);
-    color: white;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    animation: slideIn 1s ease-out;
-  }
+.app-header {
+  font-family: var(--font-family); /* Make sure this is set for both headers */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--header-bg); /* Dark gray */
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px; /* Gap between header and sub-header */
+}
+
   
   .logo {
     font-size: 1.8rem;
@@ -50,16 +51,6 @@
   }
   
   /* 🔄 Animations */
-  @keyframes slideIn {
-    0% {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
   
   @keyframes pulse {
     0% {
