@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #161616;
+}
+
+:root {
+    --header-bg: #292929; 
+    --accent: #39ff14;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+@keyframes slideIn {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      color: #ffffff;
+    }
+    50% {
+      transform: scale(1.05);
+      color: #00ffe7;
+    }
+    100% {
+      transform: scale(1);
+      color: #ffffff;
+    }
+  }
+  
